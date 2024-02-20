@@ -50,7 +50,7 @@ def number_template_display(n):
 
 @app.route("/number_odd_or_even/<int:n>", strict_slashes=False)
 def even_or_odd_template_display(n):
-    outcome = "even" if n%2 == 0 else "odd"
+    outcome = "even" if n % 2 == 0 else "odd"
     return render_template(
         "6-number_odd_or_even.html",
         name=n,
