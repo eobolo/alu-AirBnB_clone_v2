@@ -30,9 +30,10 @@ def c_display(text):
     text_str = " ".join(text.split("_"))
     return "C {0}".format(text_str)
 
-@app.route("/python", strict_slashes=True)
+
+@app.route("/python", strict_slashes=False)
 @app.route("/python/<text>", strict_slashes=False)
-def python_display(text="cool"):
+def python_display(text="is cool"):
     text_str = " ".join(text.split("_"))
     return "Python {0}".format(text_str)
 
